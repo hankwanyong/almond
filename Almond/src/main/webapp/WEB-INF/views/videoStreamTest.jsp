@@ -55,5 +55,8 @@
     });
   }    
 </script>
+<p>
+	git 테스트
+</p>
 </body>
 </html>                         
