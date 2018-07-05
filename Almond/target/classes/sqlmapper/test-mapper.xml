@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.seeroo.sp.api.dao.TestDao">
+
+	<insert id="insertTest">
+		insert into SP_MEMBER(
+			MEM_SEQ
+			, MEM_NICK
+			, link_sc
+			, link_sc_spc
+			, Last_access_dt
+			, fst_join_dt
+			, lt_ch_dt
+			, lt_ch_id
+			)values(
+			null
+			, 'TEST4'
+			, 'N'
+			, '테스트중입니다.3'
+			, sysdate()
+			, sysdate()
+			, sysdate()
+			, 'test33'
+			)
+	</insert>
+
+
+</mapper>
