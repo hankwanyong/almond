@@ -43,11 +43,11 @@ public class LoginApiController extends ApiComnController{
 		try {
 			super.log.info("id : "+id);
 			
-//			super.log.debug("DB연결 시작");
-//			
-//			service.insertTest();
-//			
-//			super.log.debug("DB연결 끝");
+			super.log.debug("DB연결 시작");
+			
+			service.insertTest();
+			
+			super.log.debug("DB연결 끝");
 			
 			result.setId(id);
 			result.setResCode("0000");

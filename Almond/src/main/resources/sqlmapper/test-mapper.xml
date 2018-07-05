@@ -15,13 +15,13 @@
 			, lt_ch_id
 			)values(
 			null
-			, 'TEST4'
+			, 'TEST2'
 			, 'N'
-			, '테스트중입니다.3'
+			, '테스트중입니다.2'
+			, (select now())
 			, sysdate()
 			, sysdate()
-			, sysdate()
-			, 'test33'
+			, 'test2'
 			)
 	</insert>
 
