@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.seeroo</groupId>
-	<artifactId>sp</artifactId>
-	<name>sp</name>
+	<artifactId>almond</artifactId>
+	<name>almond</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
@@ -131,12 +131,6 @@
 		    <version>1.4</version>
 		</dependency>
 		
-		<dependency> 
-         <groupId>com.oracle</groupId>
-         <artifactId>ojdbc6</artifactId>
-         <version>11.2.0</version>
-        </dependency>
-        
         <!-- Maria DB -->
         <dependency> 
          <groupId>org.mariadb.jdbc</groupId>

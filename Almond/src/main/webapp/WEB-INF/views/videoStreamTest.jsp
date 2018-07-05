@@ -23,40 +23,52 @@
 </style>
 
 <script>
-	$(document).ready(function(){
 
+	$(document).ready(function(){
+		videoUrlAjax();
+		var video = document.getElementById('video');
+		function videoUrlAjax(){
+			$.ajax({
+				type : "GET",
+		           url : "/web/videoSeq",
+		           dataType : "text",
+		           error : function(){  
+		               alert('비정상적 접속');
+		               return;
+		           },
+		           success : function(data){
+		        	   if(data.indexOf("http") != -1){
+		        		   if(Hls.isSupported()) {
+				       		    var hls = new Hls();
+				       		    hls.loadSource(data);
+				       		    hls.attachMedia(video);
+				       		    hls.on(Hls.Events.MANIFEST_PARSED,function() {
+				       		      video.play();
+				       		  });   
+				       		 }
+				       		  else if (video.canPlayType('application/vnd.apple.mpegurl')) {      
+				       			  console.log("2");
+				       			video.src = data;       
+				       		    video.addEventListener('loadedmetadata',function() {
+				       		      video.play();
+				       		    });
+				       		  } 
+		        	   }else{
+		        		   alert('비정상적 접속');
+		        	   }
+		           	return;
+		           }
+		
+			});
+		}
 	});
 	
 	
-// 	var player = videojs('videoTag');
-// 	player.play();  
 </script>
 </head>
 <body>
 
 <video id="video" controls></video>
-<script>
-  var video = document.getElementById('video');
-  if(Hls.isSupported()) {
-	  console.log("1");
-    var hls = new Hls();
-    hls.loadSource('http://192.168.0.211/stream/test7/video.m3u8');
-//     hls.loadSource('http://192.168.0.211/stream/test3/playlist.m3u8');
-    hls.attachMedia(video);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video.play();
-  });   
- }
-  else if (video.canPlayType('application/vnd.apple.mpegurl')) {      
-	  console.log("2");
-	video.src = 'http://192.168.0.211/stream/test2/stream.m3u8';       
-    video.addEventListener('loadedmetadata',function() {
-      video.play();
-    });
-  }    
-</script>
-<p>
-	git 테스트
-</p>
+
 </body>
 </html>                         

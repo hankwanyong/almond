@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 
 public class ComnWebController {
 	
-	private Logger log = LoggerFactory.getLogger(ComnWebController.class); 
+	protected Logger log = LoggerFactory.getLogger(ComnWebController.class); 
 
+	
 }

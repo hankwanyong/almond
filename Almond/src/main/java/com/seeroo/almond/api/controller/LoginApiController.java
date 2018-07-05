@@ -41,7 +41,7 @@ public class LoginApiController extends ApiComnController{
 	public ApiTestRes testApi(@RequestParam(value="id") String id) {
 		ApiTestRes result = new ApiTestRes();
 		try {
-			super.log.debug("id : "+id);
+			super.log.info("id : "+id);
 			
 //			super.log.debug("DB연결 시작");
 //			
@@ -52,9 +52,9 @@ public class LoginApiController extends ApiComnController{
 			result.setId(id);
 			result.setResCode("0000");
 			result.setResMsg("꺄~~~ api성공");
-			super.log.debug("result : "+result.toString());
+			super.log.info("result : "+result.toString());
 		} catch (Exception e) {
-			super.log.debug(e.toString());
+			super.log.info(e.toString());
 			result.setResCode("9000");
 			result.setResMsg("ㅠㅠ api실패");
 		}
