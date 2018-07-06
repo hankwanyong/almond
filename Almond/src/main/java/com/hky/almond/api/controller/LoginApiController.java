@@ -1,6 +1,7 @@
 package com.hky.almond.api.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -35,7 +36,7 @@ public class LoginApiController extends ApiComnController{
 	} 
 	
 	@RequestMapping(value="/test" ,method= {RequestMethod.GET, RequestMethod.POST})
-	public ApiTestRes testApi(@RequestParam(value="id") String id) {
+	public ApiTestRes testApi(@RequestParam(value="id") String id) throws DataAccessException {
 		ApiTestRes result = new ApiTestRes();
 		try {
 			super.log.info("id : "+id);
@@ -50,7 +51,11 @@ public class LoginApiController extends ApiComnController{
 			result.setResCode("0000");
 			result.setResMsg("꺄~~~ api성공");
 			super.log.info("result : "+result.toString());
-		} catch (Exception e) {
+		} catch (DataAccessException e) {
+			super.log.info(e.toString());
+			result.setResCode("9000");
+			result.setResMsg("ㅠㅠ api실패");
+		}catch (Exception e) {
 			super.log.info(e.toString());
 			result.setResCode("9000");
 			result.setResMsg("ㅠㅠ api실패");
