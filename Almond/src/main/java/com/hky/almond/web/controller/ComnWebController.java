@@ -1,4 +1,4 @@
-package com.seeroo.almond.web.controller;
+package com.hky.almond.web.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

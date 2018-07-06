@@ -1,4 +1,4 @@
-package com.seeroo.almond.api.dto;
+package com.hky.almond.api.dto;
 
 import lombok.Data;
 

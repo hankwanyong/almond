@@ -1,8 +1,8 @@
-package com.seeroo.almond.api.dto;
+package com.hky.almond.api.dto;
 
 import java.io.Serializable;
 
-import com.seeroo.almond.api.dto.comn.ApiComnRes;
+import com.hky.almond.api.dto.comn.ApiComnRes;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

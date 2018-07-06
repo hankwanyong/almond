@@ -1,17 +1,14 @@
-package com.seeroo.almond.api.controller;
+package com.hky.almond.api.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.seeroo.almond.api.dto.ApiLoginRes;
-import com.seeroo.almond.api.dto.ApiTestRes;
-import com.seeroo.almond.api.service.testService;
-import com.seeroo.almond.api.service.impl.testServiceImpl;
+import com.hky.almond.api.dto.ApiLoginRes;
+import com.hky.almond.api.dto.ApiTestRes;
+import com.hky.almond.api.service.testService;
 
 @RestController
 @RequestMapping(value="/api")

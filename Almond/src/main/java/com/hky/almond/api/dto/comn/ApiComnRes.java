@@ -1,4 +1,4 @@
-package com.seeroo.almond.api.dto.comn;
+package com.hky.almond.api.dto.comn;
 
 import lombok.Data;
 import lombok.ToString;

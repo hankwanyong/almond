@@ -1,11 +1,11 @@
-package com.seeroo.almond.api.service.impl;
+package com.hky.almond.api.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 
-import com.seeroo.almond.api.dao.TestDao;
-import com.seeroo.almond.api.service.testService;
+import com.hky.almond.api.dao.TestDao;
+import com.hky.almond.api.service.testService;
 
 @Service
 public class testServiceImpl implements testService {

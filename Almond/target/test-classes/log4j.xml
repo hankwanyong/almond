@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.seeroo.sp">
+	<logger name="com.hky.sp">
 		<level value="info" />
 	</logger>
 	

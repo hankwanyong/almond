@@ -1,4 +1,4 @@
-package com.seeroo.almond;
+package com.hky.almond;
 
 import java.text.DateFormat;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package com.seeroo.almond.web.controller;
+package com.hky.almond.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

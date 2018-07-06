@@ -21,8 +21,8 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.seeroo.almond" />
-	<context:component-scan base-package="com.seeroo.almond.api.service" />
+	<context:component-scan base-package="com.hky.almond" />
+	<context:component-scan base-package="com.hky.almond.api.service" />
 	
 	
 </beans:beans>

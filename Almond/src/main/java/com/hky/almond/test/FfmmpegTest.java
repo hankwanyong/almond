@@ -1,4 +1,4 @@
-package com.seeroo.almond.test;
+package com.hky.almond.test;
 
 import java.io.IOException;
 

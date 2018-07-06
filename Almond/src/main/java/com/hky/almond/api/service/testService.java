@@ -1,4 +1,4 @@
-package com.seeroo.almond.api.service;
+package com.hky.almond.api.service;
 
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
